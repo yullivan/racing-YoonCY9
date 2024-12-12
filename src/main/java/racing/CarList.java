@@ -18,6 +18,11 @@ public class CarList {
         Scanner scanner = new Scanner(System.in);
         String cars = scanner.nextLine();
         String[] carsArray = cars.split(",");
+        for (int i = 0; i < carsArray.length; i++) {
+            if (carsArray[i].length() > 10) {
+                throw new IllegalArgumentException("자동차의 이름은 10자를 초과할수 없습니다.");
+            }
+        }
         List<String> carList = Arrays.asList(carsArray);
         this.carList = carList;
 //        System.out.println(carList.get(0));
