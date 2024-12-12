@@ -65,50 +65,22 @@ class ApplicationTests {
 //                throw new IllegalArgumentException("자동차의 이름은 10자를 초과할수 없습니다.");
 //            }
 //        }
-//        int goOrStop = 0;
 //
 //        List<String> carList = Arrays.asList(carsArray);
-//        HashMap<String, Integer> cars = new HashMap<>();
-//        int 시행횟수 = 3;
-//        for (int i = 0; i < 시행횟수; i++) {
-//            for (int j = 0; j < carList.size(); j++) {
-//                DiceNum num = new DiceNum();
-//                cars.put(carList.get(j),goOrStop);
-//                goOrStop += num.getDiceResult();
-//            }
-//            System.out.println("-------------");
-//            print(cars);
+//
+//
+//        HashMap<String, String> result = RaceGoOrStop.raceResult(carList);
+//        for (Map.Entry<String, String> entry : result.entrySet()) {
+//            System.out.println(entry.getKey() + ": " + entry.getValue());
 //        }
+//
 //    }
 
-//    @Test
-//    void name() {
-//        List<String> carList = new ArrayList<>();
-//        carList.add("람보");
-//        차가달린다(carList);
-//    }
-//
-//    public void 차가달린다(List<String> carList) {
-//        int 시행횟수 = 5;
-//        int 달린다;
-//        HashMap<String, Integer> cars = new HashMap<>();
-//        for (int i = 0; i < 시행횟수; i++) {
-//            DiceNum num = new DiceNum();
-//            달린다 = num.getDiceResult();
-//            cars.put(carList.get(0), 달린다);
-//            print(cars);
-//            달린다 += num.getDiceResult();
-//        }
-//    }
-//
-//
-//
-//
-//
-//    private static void print(HashMap<String, Integer> cars) {
-//        for (Map.Entry<String, Integer> entry : cars.entrySet()) {
+
+//    private static void print(HashMap<String, String> cars) {
+//        for (Map.Entry<String, String> entry : cars.entrySet()) {
 //            String key = entry.getKey();
-//            Integer value = entry.getValue();
+//            String value = entry.getValue();
 //            System.out.println(key + "." + value);
 //        }
 //    }
