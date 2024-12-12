@@ -9,11 +9,26 @@ public class CarList {
 
     private List<String> carList;
 
-    public List<String> getCarList() {
-        return carList;
+    public void getCarList() {
+        for (int i = 0; i < carList.size(); i++) {
+            System.out.println(carList.get(i));
+        }
     }
+    // 해쉬맵에 넣을때 리스트의 사이즈를 알기 위해 만듦
+//    public int getCarsSize() {
+//        int carsSize = carList.size();
+//        return carsSize;
+//    }
+//    // 해쉬맵에 넣을때 차의 이름을 알기 위해 만듦
+//    public List<String> getCarsName() {
+//        List<String> name = new ArrayList<>();
+//        for (int i = 0; i < getCarsSize(); i++) {
+//            name.add(carList.get(i));
+//        }
+//        return name;
+//    }
 
-    public List<String> car() {
+    public List<List<String>,String> car() {
 
         Scanner scanner = new Scanner(System.in);
         String cars = scanner.nextLine();
@@ -25,9 +40,6 @@ public class CarList {
         }
         List<String> carList = Arrays.asList(carsArray);
         this.carList = carList;
-//        System.out.println(carList.get(0));
-//        System.out.println(carList.get(1));
-//        System.out.println(carList.get(2));
-        return this.carList;
+//        return this.carList;
     }
 }
